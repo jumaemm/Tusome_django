@@ -4,4 +4,4 @@ from tusome_core.models import Book, Review
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ('title', 'isbn', 'author', 'cover')
+        fields = ('title', 'isbn', 'author', 'cover', 'category', 'uploaded_by')
